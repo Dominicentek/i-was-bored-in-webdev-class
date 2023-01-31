@@ -12,6 +12,7 @@ let speed = 0;
 let interval;
 function beginRot() {
     speed = 0;
+    rot = 0;
     interval = setInterval(function() {
         speed += 0.01;
         rot += speed;
