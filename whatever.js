@@ -11,6 +11,7 @@ let rot = 0;
 let speed = 0;
 let interval;
 function beginRot() {
+    speed = 0;
     interval = setInterval(function() {
         speed += 0.01;
         rot += speed;
@@ -22,18 +23,6 @@ function endRot() {
     document.getElementById("he-missed-:(").style.transform = "rotate(0deg)";
     document.getElementById("sped").innerHTML = "sped: 0 deg/ms<br>rotetoin: 0 deg";
     clearInterval(interval);
-    interval = setInterval(function() {
-        if (speed <= 0) {
-            speed = 0;
-            clearInterval(interval);
-        }
-        speed -= 0.05;
-        rot -= speed;
-        if (rot <= 0) {
-            rot = 0;
-            clearInterval(interval);
-        }
-    }, 1)
 }
 function runbf() {
     let output = document.getElementById("output");
