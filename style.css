@@ -1,0 +1,88 @@
+body {
+    font-family: "Comic Sans MS", serif;
+    background: linear-gradient(90deg, #f00 0%, #f80 20%, #ff0 40%, #0f0 60%, #00f 80%, #f0f 100%);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+}
+body > header {
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(270deg, #f00 0%, #f80 20%, #ff0 40%, #0f0 60%, #00f 80%, #f0f 100%);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo img {
+    margin: 25px 15px;
+    transition: 1s;
+}
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav ul li {
+    padding: 0 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.5em;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    transition: 1s;
+}
+nav ul li a:hover {
+    color: blue;
+    letter-spacing: 100px;
+}
+#logo img:hover {
+    transform: scale(100);
+}
+#jumpskar {
+    color: white;
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    font-size: 69px;
+}
+.ohnoooo {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: 25%;
+    height: 25%;
+}
+.photo {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 36px 1fr;
+    grid-gap: 24px;
+    background-color: magenta;
+    border: 5px solid green;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.photo img {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+.photo h3 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+}
+.photo text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
